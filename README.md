@@ -1,2 +1,2 @@
 # static_website
-Static website
+this is a Static website seling bonsai pants developed using HTML,CSS and javascript
