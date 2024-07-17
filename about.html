@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- keeping logo before the title -->
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <title>BONSAI NEPAL</title>
+    <!-- internal css  -->
+    <style>
+        /* Style of body */
+        body {
+            /* giving font  */
+            font-family: sans-serif;
+            height: 10rem;
+        }
+
+        .nav {
+            /* css for fixing nav bar  */
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        /* css of first line of about us  */
+        #aboutusfirst {
+            margin-top: 12rem;
+        }
+
+        /* css for main div with all contents  */
+        .aboutus-main {
+            display: flex;
+            margin: 1rem 7rem;
+        }
+
+        /* css for heading inside div with details about us  */
+        .aboutus-details h1 {
+            padding-bottom: 5px;
+        }
+
+        /* css for paragraph inside div with details about us  */
+        .aboutus-details p {
+            padding-bottom: 5px;
+            padding-right: 30rem;
+            text-align: justify;
+        }
+
+         /* css for image inside div with details about us  */
+        .aboutusimg img {
+            width: 250px;
+            height: 250px;
+            border-radius: 250px;
+        }
+
+        /* css for icons of facebook and instagram  */
+        .aboutus-details img {
+            height: 25px;
+            padding-right: 5px;
+        }
+
+        /* css for div containing all the written details  */
+        .aboutus-details {
+            height: 250px;
+            padding-top: 40px;
+            margin-left: 2rem;
+        }
+
+        /* css for div containing all the contents  on right side*/
+        .aboutus-main2 {
+            display: flex;
+            margin: 1rem 7rem;
+        }
+
+        /* css for heading in right sided about us  */
+        .aboutus-details2 h1 {
+            padding-bottom: 5px;
+        }
+
+        /* css for paragraph in right sided about us  */
+        .aboutus-details2 p {
+            padding-bottom: 5px;
+            padding-left: 30rem;
+            text-align: justify;
+        }
+
+        /* css for image in right sided about us  */
+        .aboutusimg2 img {
+            width: 250px;
+            height: 250px;
+            border-radius: 250px
+        }
+
+        /* css for iconv img in right sided about us  */
+        .aboutus-details2 img {
+            height: 25px;
+            padding-right: 5px;
+
+        }
+
+        /* css for div containing both icons  */
+        .iconcontainer {
+            margin-right: 29rem;
+        }
+
+        /* css for div with all the content in about us in right side */
+        .aboutus-details2 {
+            height: 250px;
+            padding-top: 40px;
+            margin-right: 2rem;
+            text-align: right;
+
+        }
+
+        /* div with feedback form  */
+        .feedback {
+            background-color: black;
+            padding-top: 2rem;
+            padding-left: 7rem;
+            color: white;
+            padding-bottom: 2rem;
+        }
+
+        /* css for div containing all content of form  */
+        .feedbackform {
+            display: flex;
+        }
+
+        /* css for label tag */
+        label {
+            display: block;
+            margin: 0.5rem 0;
+        }
+
+        /* css for input tag */
+        input {
+            margin: 10px 0 0 0;
+            width: 223.8px;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-color: rgba(0, 0, 0, 0.3);
+            height: 2em;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        /* css for text area  */
+        textarea {
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-color: rgba(0, 0, 0, 0.3);
+        }
+
+        /* css for div which contains comments  */
+        .pt2 {
+            margin-left: 2rem;
+        }
+
+        /* css for button to submit form  */
+        button {
+            padding: 10px;
+            width: 5rem;
+            padding-top: 3px;
+            height: 2em;
+            text-align: center;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-color: rgba(0, 0, 0, 0.8);
+            color: black;
+        }
+    </style>
+    <!-- internal javascript  -->
+    
+</head>
+
+<body>
+     <!-- this div is for eveything inside the navbar -->
+    <div class="nav">
+         <!-- div for logo  -->
+        <div class="image">
+            <!-- making the logo a link to home page  -->
+            <a href="../index.html"><img class="logo" src="../images/logo.png" alt="logo"></a>
+        </div>
+        <!-- company name beside logo and internal css  -->
+        <h1
+            style="margin-right:8rem;padding-top: 3rem;padding-left: 2rem;color: white; font-size: 3rem; width: max-content; height: max-content;font-family: 'Proxima Nova'">
+            BONSAI NEPAL</h1>
+         <!-- div for listed items like home products etc  -->
+        <div class="navitems">
+            <table>
+                <ul>
+                    <!-- list of links to navigate our webpage  -->
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="refernces.html">References</a></li>
+                    <li><a href="about.html" class="active">About us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                </ul>
+            </table>
+        </div>
+    </div>
+    
+    <!-- div which contains details about a person  -->
+    <div class="aboutus-main" id="aboutusfirst">
+        <!-- div containing image  -->
+        <div class="aboutusimg">
+            <img src="../images/praneet.jpg" alt="Praneet">
+        </div>
+        <!-- div with details about us  -->
+        <div class="aboutus-details">
+            <h1>Praneet Tuladhar</h1>
+            <p>Hello, everyone! My name is Praneet Tuladhar and I'm from Lazimpat, Kathmandu. I'm currently studying Bacelors in Computing at Islington College, Kathmadu, and I hope to become a succesfull business tycoon one day. I'm really passionate about computers, technology, IT , and I'm always looking for new ways to learn and improve my skills. For more business enquires you can mail me at biq.praneet@gmail.com</p>
+            <!-- link to our personal social media handle  -->
+            <a href="https://www.facebook.com/praneet.tuladhar/"><img src="../images/facebook.png" alt="fb_icon"></a>
+            <a href="https://www.instagram.com/praneet.yt/">
+                <img src="../images/insta.png" alt="insta_icon"></a>
+        </div>
+    </div>
+
+    <!-- div which contains details about a person  -->
+    <div class="aboutus-main2">
+        <!-- div with details about us  -->
+        <div class="aboutus-details2">
+            <h1>Aayush Shrestha</h1>
+            <p>Hii,everyone!My name is Aayush shrestha currently studying BSC(hons) in computing in Islington college.I am a permanent resident of kalanki.i aim to be web developer.I am passionate about technology. i like researching things mostly when the topic is of technology. I hope to a successful web developer in my near future.
+
+            </p>
+            <div class="iconcontainer">
+                 <!-- link to our personal social media handle  -->
+                <a href=https://www.facebook.com/ayush.shrestha.773776><img src="../images/facebook.png"
+                        alt="fb_icon"></a>
+                <a href="https://www.instagram.com/aysh.stha/">
+                    <img src="../images/insta.png" alt="insta_icon"></a>
+            </div>
+        </div>
+        <!-- div containing image  -->
+        <div class="aboutusimg2">
+            <img src="../images/aayush.jpg" alt="Praneet">
+        </div>
+    </div>
+
+    <!-- div which contains details about a person  -->
+    <div class="aboutus-main">
+        <!-- div containing image  -->
+        <div class="aboutusimg">
+            <img src="../images/symphony.jpg" alt="Praneet">
+        </div>
+        <!-- div with details about us  -->
+        <div class="aboutus-details">
+            <h1>Symphony Sharma Siwakoti</h1>
+            <p>Hello, everyone! My name is Symphony Sharma Siwakoti and I'm from Maharajgunj, Kathmandu. I'm currently studying Computing at Islington College and I hope to become a Web developer one day. I love researching and I am a kind of person who is always willing to learn new things and improve my skills!
+
+            </p>
+            <!-- link to our personal social media handle  -->
+                
+            <a href="https://www.instagram.com/symphonyy_0/">
+                <img src="../images/insta.png" alt="insta_icon"></a>
+        </div>
+    </div>
+
+    <!-- div which contains details about a person  -->
+    <div class="aboutus-main2">
+        <!-- div with details about us  -->
+        <div class="aboutus-details2">
+            <h1>Khubeb Akik</h1>
+            <p>Hello, everyone! My name is Khubeb Akik. I’m from
+                Kathmandu, Nepal. I’m currently studying Bachelors in
+                Computing at Islington College, and I hope to become
+                Front-end developer one day. I’m always looking for
+                new ways to learn and improve my skills.</p>
+            <div class="iconcontainer">
+                 <!-- link to our personal social media handle  -->
+                <a href="https://www.facebook.com/mohammadkhubeb07"><img src="../images/facebook.png"
+                        alt="fb_icon"></a>
+                <a href="https://www.instagram.com/khubeb_07/">
+                    <img src="../images/insta.png" alt="insta_icon"></a>
+            </div>
+        </div>
+        <!-- div containing image  -->
+        <div class="aboutusimg2">
+            <img src="../images/khubebegwgewgekjbfe.jpg" alt="Praneet">
+        </div>
+    </div>
+
+    <div class="aboutus-main">
+        <!-- div containing image  -->
+        <div class="aboutusimg">
+            <img src="../images/default.webp" alt="Praneet">
+        </div>
+        <!-- div with details about us  -->
+        <div class="aboutus-details">
+            <h1>SUYASH CHITRAKAR</h1>
+            <p>We couldn't get his description , sorry!  
+            </p>
+            
+        </div>
+    </div>
+    <!-- div containing feedback form  -->
+    <div class="feedback">
+        <h1>FEEDBACK:</h1>
+        <!-- div with inputing name and email  -->
+        <div class="feedbackform">
+            <div class="pt1">
+                <label for="Name"> Name: <br>
+                    <input type="text" name="Name" id="form_name" placeholder="  Name"></label>
+                <label for="email"> Email: <br>
+                    <input type="Email" placeholder="  Email" id="Email"></label>
+            </div>
+            <!-- div with inputing comments  -->
+            <div class="pt2">
+                <label for="comment"> Comment <br>
+                    <textarea name="comment" cols="30" rows="8" placeholder="Comment" id="comment"></textarea></label>
+            </div>
+        </div>
+        <!-- button to submit the feedback  -->
+        <button type="submit" id="submit" onclick="formvali1()">Submit</button>
+    </div>
+    <script>
+        /* function that validates if all the input 
+        field is entered by the user or not */
+        function formvali1() {
+            // asigning variable to the value input by the user
+            var a = document.getElementById("form_name").value;
+            var b = document.getElementById("Email").value;
+            var c = document.getElementById("comment").value;
+            console.log (a+b+c);
+            // if condition to check if the field is empty or not 
+            if (a == "" || b == "" || c == "") {
+                // alert message  
+                alert("Please fill all the required informtion!");
+            }
+        }
+    </script>
+</body>
+
+</html>

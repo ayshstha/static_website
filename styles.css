@@ -1,0 +1,154 @@
+/* css for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* css for listed items in table  */
+li {
+  /* removing bullet point style  */
+  list-style: none;
+  display: inline;
+}
+/* css for links in table  */
+li a {
+   /* aligning according to need */
+  padding: 2rem;
+  padding-bottom: 2rem;
+  /* shift everything to right  */
+  float: right;
+  /* aligning text to center and making decorations */
+  text-align: center;
+  text-decoration: none;
+  color: #47967B;
+  font-weight: 600;
+}
+/* css when hovering over links in nav bar  */
+li a:hover {
+  color: white;
+}
+/* css for div with givng color to active webpage  */
+.active {
+  color: grey;
+}
+/* css for div with listed items in nav bar  */
+.navitems {
+   /* aligning according to need */
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+/* css for div with logo in nav bar  */
+.logo {
+   /* aligning according to need */
+  height: 120px;
+  width: 120px;
+  margin-left: 6rem;
+  margin-top: 1.2rem;
+}
+/* css for div with whole  nav bar */
+.nav {
+  /* changing display from block to flex to manage many items in a box */
+  display: flex;
+  background-color: rgba(00, 00, 00, 1);
+  margin: 0;
+  padding: 0;
+}
+/* css for div with product and details */
+.landing-products {
+  /* changing display from block to flex to manage many cards in a line */
+  display: flex;
+  margin-top: 3rem;
+}
+/* css for div with a image of product  */
+.landing-image {
+  /* seperating flex amount  */
+  flex: 1;
+}
+/* css for image inside a card of a product  */
+.landing-image img {
+   /* aligning according to need */
+  height: 400px;
+  width: 400px;
+  margin-left: 7rem;
+}
+/* css for div with name and price of product in product page  */
+.landing-details {
+  /* seperating flex amount and aligning acc to need  */
+  flex: 2;
+  margin: 3rem 4rem;
+}
+/* css for paragraph in div landing details  */
+.landing-details p {
+  /* giving width to paragraph  */
+  width: 45rem;
+}
+/* css for div with discounted price  */
+.discprice {
+  /* formating of text  */
+  font-size: 20px;
+  color: #47967B;
+}
+/* css for div with selling price  */
+.actprice {
+   /* formating of text  */
+  font-size: 14px;
+  color: grey;
+}
+/* css for input in landing page of a product  */
+.landing-details input {
+  width: 4rem;
+}
+/* css for Quantity heading in landing page of a product  */
+.landing-details h3 {
+  display: inline-block;
+}
+/* css for buton in landing page of a product  */
+.landing-details button {
+   /* formating of button  */
+  margin-top: 5px;
+  width: 5rem;
+  padding: 0;
+  height: 2em;
+  border-radius: 30px;
+  background-color: rgba(00, 00, 00, 0.8);
+  border-color: rgba(00, 00, 00, 0.8);
+  color: #8e8e8e;
+}
+/* css for footer all over the website  */
+footer{
+  /* formating footer  */
+  background-color: black;
+  color: white;
+  padding-bottom: 1rem;
+}
+/* css for last part with author name and email in footer  */
+.fconlast {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
+/* css for div with contact details  */
+.footercontactus{
+  /* changing display from block to flex to manage many items in a line with necessary space */
+  display: flex;
+  margin-left: 8rem;
+  padding-top: 2rem;
+}
+/* css for payment partners in footer   */
+.fcon2{
+   /* formating of text  */
+  text-align: right;
+  margin-left: 55rem;
+}
+/* css for images of payment partners in footer  */
+.fcon2 img{
+  /* formating of image of payment partner in footer  */
+  margin-top: 1rem;
+  height: 20px;
+}
+/* css for link in div with author name and email i.e footer last part  */
+.fconlast a{
+  /* giving color to link in footer  */
+  color: #8e8e8e;
+}

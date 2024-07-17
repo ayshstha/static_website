@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- keeping logo before the title -->
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <title>BONSAI NEPAL</title>
+    <!-- internal css  -->
+    <style>
+        body {
+            /* keeping a bg image and fiting it in the website  */
+            background-image: url(../images/bg2-01.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* giving font  */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* css for div with all the products  */
+        .products {
+            /* display flex to keep products in a managed line  */
+            display: flex;
+            width: max-content;
+            height: max-content;
+            /* for maintaining gap between other div in the products div  */
+            gap: 50px;
+            /* aligning to center */
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 79px;
+        }
+
+        /* css for div with a product card  */
+        .p {
+            display: block;
+            width: 200px;
+            text-align: center;
+        }
+
+        /* css when hovering over a image which creates a shadow box  */
+        .p:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        /* css for product name  */
+        .heading {
+            /* formating text  */
+            font-size: 16px;
+            text-align: left;
+            margin-top: -0.25rem;
+            color: #47967B;
+        }
+
+        /* css for div with dicounted price  */
+        .discprice {
+            /* formating of text  */
+            font-size: 20px;
+            color: #47967B;
+            text-align: left;
+        }
+
+        /* css for div with selling price  */
+        .actprice {
+            /* formating of text  */
+            font-size: 14px;
+            color: grey;
+            text-align: left;
+        }
+
+        /* css for when hovering over link in product division  */
+        .products a:hover {
+            color: white;
+        }
+
+        /* css of first line of product  */
+        #line1 {
+            margin-top: 11rem;
+        }
+
+        /* css for img of products in products div  */
+        .products img {
+            /* formating of image  */
+            height: 200px;
+            width: 200px;
+        }
+
+        /* css for link of products in products div  */
+        .products a {
+            text-decoration: none;
+        }
+
+        /* css for fixing nav bar  */
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        /* css for dicount percentage  */
+        .per {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div for eveything inside the navbar -->
+    <div class="nav">
+        <!-- div for logo  -->
+        <div class="image">
+            <!-- making the logo a link to home page  -->
+            <a href="../index.html"><img class="logo" src="../images/logo.png" alt="logo"></a>
+        </div>
+        <!-- company name beside logo and internal css  -->
+        <h1
+            style="margin-right:8rem;padding-top: 3rem;padding-left: 2rem;color: white; font-size: 3rem; width: max-content; height: max-content;font-family: 'Proxima Nova'">
+            BONSAI NEPAL</h1>
+        <!-- div for listed items like home products etc  -->
+        <div class="navitems">
+            <table>
+                <ul>
+                    <!-- list of all links in nav bar  -->
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="refernces.html">References</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                </ul>
+            </table>
+        </div>
+    </div>
+    <!-- div with 4 product including images  -->
+    <div class="products" id="line1">
+        <!-- link to landing page  -->
+        <a href="p1.html">
+            <!-- div with name dis price actual price  -->
+            <div class="p">
+                <!-- product image  -->
+                <img src="../images/1.png" class="img1" alt="Rock Juniper">
+                <p class="heading">Rock Juniper</p>
+                <p class="discprice">Rs. 4500</p>
+                <p class="actprice"><del>Rs. 5000</del>&nbsp;&nbsp; <span class="per">10%</span></p>
+        </a>
+    </div>
+    <!-- link to landing page  -->
+    <a href="p2.html">
+        <!-- div with name dis price actual price  -->
+        <div class="p">
+            <!-- product image  -->
+            <img src="../images/2.png" alt="1">
+            <p class="heading">Chinese Elm</p>
+            <p class="discprice">Rs. 8500</p>
+            <p class="actprice"><del>Rs. 10000</del>&nbsp;&nbsp; <span class="per">15%</span></p>
+    </a>
+
+    </div>
+    <!-- link to landing page  -->
+    <a href="p3.html">
+        <!-- div with name dis price actual price  -->
+        <div class="p">
+            <!-- product image  -->
+            <img src="../images/4.png" alt="1">
+            <p class="heading">Pomegranate Bonsai</p>
+            <p class="discprice">Rs. 5400</p>
+            <p class="actprice"><del>Rs. 6000</del>&nbsp;&nbsp; <span class="per">10%</span></p>
+    </a>
+
+    </div>
+    <!-- link to landing page  -->
+    <a href="p4.html">
+        <!-- div with name dis price actual price  -->
+        <div class="p">
+            <!-- product image  -->
+            <img src="../images/4.5.png" alt="1">
+            <p class="heading">Golden Gate Ficus</p>
+            <p class="discprice">Rs. 6000</p>
+            <p class="actprice"><del>Rs. 6600</del>&nbsp;&nbsp; <span class="per">10%</span></p>
+    </a>
+    </div>
+    </div>
+    <!-- this div is for eveything inside the navbar -->
+    <!-- div for logo  -->
+    <div class="products" id="2nd">
+        <!-- link to landing page  -->
+        <a href="p5.html">
+            <!-- div with name dis price actual price  -->
+            <div class="p">
+                <!-- product image  -->
+                <img src="../images/5.png" alt="1">
+                <p class="heading">Young Juniper</p>
+                <p class="discprice">Rs. 4000</p>
+        </a>
+    </div>
+    <!-- link to landing page  -->
+    <a href="p6.html">
+        <!-- div with name dis price actual price  -->
+        <div class="p">
+            <!-- product image  -->
+            <img src="../images/6.png" alt="1">
+            <p class="heading">Boxwood</p>
+            <p class="discprice">Rs. 6800</p>
+            <p class="actprice"><del>Rs. 8000</del>&nbsp;&nbsp; <span class="per">15%</span></p>
+    </a>
+    </div>
+    <!-- link to landing page  -->
+    <a href="p7.html">
+        <!-- div with name dis price actual price  -->
+        <div class="p">
+            <!-- product image  -->
+            <img src="../images/7.png" alt="1">
+            <p class="heading">Large Rock Juniper</p>
+            <p class="discprice">Rs. 17000</p>
+    </a>
+    </div>
+    <!-- link to landing page  -->
+    <a href="p8.html">
+        <!-- div with name dis price actual price  -->
+        <div class="p">
+            <!-- product image  -->
+            <img src="../images/8.png" alt="1">
+            <p class="heading">Sago Palm</p>
+            <p class="discprice">Rs. 7125</p>
+            <p class="actprice"><del>Rs. 7500</del>&nbsp;&nbsp; <span class="per">5%</span></p>
+    </a>
+    </div>
+    </div>
+    <footer>
+        <!-- div which contains all of the content in footer  -->
+        <div class="footercontactus">
+            <!-- div with contact informations  -->
+            <div class="fcon1">
+                <h3>Contact</h3>
+                <p><br>Kathmandu, Nepal<br>01-4412345<br>Bonsai.Nepal@gmail.com</p>
+            </div>
+            <!-- div with payment partners listed  -->
+            <div class="fcon2">
+                <h3>Our Payment Partner</h3>
+                <img src="../images/esewa.png" alt="esewa">
+                <img src="../images/khalti.png" alt="khalti"><br>
+                <img src="../images/visa.PNG" alt="visa">
+                <img src="../images/Mastercard.png" alt="mastercard">
+            </div>
+        </div>
+        <!-- div with author and email  -->
+        <div class="fconlast">
+            <p>Author: Team 7 C13<br>
+                <a href="mailto:Bonsai.Nepal@gmail.com">Bonsai.Nepal@gmail.com</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

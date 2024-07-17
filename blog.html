@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- keeping logo before the title -->
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <title>BONSAI NEPAL</title>
+    <!-- internal css  -->
+    <style>
+        body {
+            /* keeping a bg image and fiting it in the website  */
+            background-image: url(bg4-01.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* giving font  */
+            font-family: sans-serif;
+            height: 10rem;
+        }
+
+        /* css for main div with photo and text  */
+        .main {
+            display: flex;
+        }
+
+        /* css for div with image in blog  */
+        .blogimg {
+            /* seperating 1 part of flex box  */
+            flex: 1;
+        }
+
+        /* css for img in blogimg div  */
+        .blogimg img {
+            width: 380px;
+        }
+
+        /* css for div with main writings in blog  */
+        .text {
+            /* seperating 3 part of flex box  */
+            flex: 3;
+            /* to keep block of text in line  */
+            display: flex;
+        }
+        .text1{
+            font-size: 13px;
+        }
+        .text2{
+            font-size: 12.9px;
+        }
+        .text3{
+            font-size: 13px;
+        }
+        /* css for 3 divs of text  */
+        .text1,
+        .text2,
+        .text3 {
+            /* seperating 1/3 part of flex box  */
+            flex: 33%;
+            /* formating text  */
+            text-align: justify;
+            /* managing gapping  */
+            margin-top: 15px;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- this div is for eveything inside the navbar -->
+    <div class="nav">
+        <!-- div for logo in nav bar  -->
+        <div class="image">
+            <!-- making the logo a link to home page  -->
+            <a href="../index.html"><img class="logo" src="../images/logo.png" alt="logo"></a>
+        </div>
+        <!-- company name beside logo and internal css  -->
+        <h1
+            style="margin-right:8rem;padding-top: 3rem;padding-left: 2rem;color: white; font-size: 3rem; width: max-content; height: max-content;font-family: 'Proxima Nova'">
+            BONSAI NEPAL</h1>
+        <!-- div for listed items like home products etc  -->
+        <div class="navitems">
+            <table>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="refernces.html">References</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                </ul>
+            </table>
+        </div>
+    </div>
+    <!-- div with image and text -->
+    <div class="main">
+        <!-- div with blog image  -->
+        <div class="blogimg">
+            <img src="../images/blog3.jpg">
+        </div>
+        <!-- div with blog text  -->
+        <div class="text">
+            <!-- div with 1st part of blog  -->
+            <div class="text1">
+                <p><strong>About technology</strong><br>
+                    E-commerce, the activity of buying or selling of goods and services over the internet, draws on technologies like electronic funds transfer, internet marketing, online transaction processing, automated data collection systems, and more. Such technologies have made the buying/selling process quicker, easier, and far more convenient. <br>
+                    E-commerce includes the exchange of data to promote business transactions' financing and payment aspects. It is widely considered to be the sales aspect of E-business as it is a market entry strategy where the company may or may not have a physical presence. In the early days, E-commerce was only limited to emails and phone calls. Fortunately, now, with a single website, anything and everything that a transaction need can be fulfilled online.  <br>
+                    E-commerce is a worldwide network. A small business or a local store can open its own web shopwindow and find the world at its doorstep. Creating a webpage for your shop can welcome you with new opportunities to gain new customers, suppliers, and competitors and even ways to further grow your business.<br>
+                    <br>
+                    <strong>Architectural Framework of E-Commerce</strong><br>
+                    The architectural framework of e-commerce means synthesizing many existing resources such as DBMS, data repositories, computer languages, monitors, or communication protocols to facilitate the integration of data and software for improved applications.<br>
+                    <br>
+                    <strong>Positive Impacts: </strong><br>
+                    
+                    1. E-commerce helps in growing the market place to domestic and global market with minimal capital outlay. Stepping into global market through sites and pages can easily and quickly locate more customers, the best suppliers, and the most suited business partners worldwide. <br>
+                    
+                </p>
+            </div>
+            <!-- div with 2nd part of blog  -->
+            <div class="text2">
+                <p>2. The expenses of creating, processing, distributing, storing, and retrieving paper-based information is reduced when businesses switched to e-business. For example: A company can cut down the purchasing administrative costs by as much as 85 percent by introducing electronic procurement system. <br>
+                    3. Internet is much cheaper than value added networks, thus electronic commerce minimizes telecommunication cost. <br>
+                    4. It facilitates customers to shop or do other transactions any time, from anywhere, all year round. <br>
+                    5. E-commerce provides customers with much more choices and also provides them relevant and detailed information in seconds. <br>
+                    6. It allows customers to interact with suppliers and other customers and exchanges ideas as well as compare experiences. <br>
+                    7. E-commerce encourages more people to work from home. <br>
+                    8. It enables people in rural areas and underdeveloped/developing countries to enjoy products and services that are unavailable to them. <br>
+                    <br><strong>Negative impacts: </strong><br>
+                    1. Lack of quality products, lack of timely delivery of products. <br>
+                    2. There is a higher probability of frauds via online payments due to low security and no verification. <br>
+                    3.  of awareness of the technology and its potential also leads to poor growth of e-commerce. <br>
+                    4. The advertising and the net tend to focus on the better e-commercialization rather than on brands found in the real world which makes people lose their trust in online goods and services. <br>
+                    5. Due to the business switching to run via online platform, people tend to become unproductive to work themselves and depend upon computers more and more. <br>
+                    
+                </p>
+            </div>
+            <!-- div with 3rd part of blog  -->
+            <div class="text3">
+                <p><strong>Impact of technology while selling Bonsai plants
+                </strong><br>
+                A Bonsai tree can sell for a different price based upon the size and other various components. Their age, species, looks and scarring are all the factors to consider. Depending upon these factors, a bonsai tree can cost from $24.19 to $1209300. <br>
+                The business of bonsai stepping into e-market has escalated the bonsai market worldwide. According to research, Bonsai market is expected to grow at a rate of 4.10% between 2020 and 2027. People are highly demanding bonsai plants to be grown in their homes due to their small spaces. Over the next decade, the bonsai market is expected to grow by 10%. The e-businesses of bonsai trees has made the buying/selling easier or even auction them. Japan was the first country to introduce bonsai trees, and now, with the help of technology and e-commerce, the bonsai market is growing internationally. Planting and nurturing bonsai is a great hobby that relieves stress and slows down time in this busy world. <br>
+                <br><strong>Conclusion</strong><br>
+                Online-based markets are advancing to become precisely phenomenal in today’s business world. Since the occurrence of e-commerce, buying, selling and the entire architecture of business have changed. <br>
+                E-commerce has become a perfect solution for start-ups with minimal investments to grow itself. A popular example, Amazon. It started off inside a garage, today Amazon has grown to have every worldwide market within its grasp and provides everything from plants to groceries to books to appliances. <br> 
+                E-commerce has given opportunities for many businesses including bonsai plants to promote itself internationally and increase sales constantly. <br>
+                
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

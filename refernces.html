@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- keeping logo before the title -->
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <title>BONSAI NEPAL</title>
+    <!-- internal css  -->
+    <style>
+        body {
+            /* giving font  */
+            font-family: sans-serif;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        /* css for div with all the contents */
+        .maindiv {
+            /* display flex to keep manage elements  */
+            display: flex;
+            margin-left: 1rem;
+        }
+
+        /* css for div with screenshot of our webpage  */
+        .img1 {
+            /* seperating flex area  */
+            flex: 1;
+        }
+
+        /* css for div with screenshot of reference webpage  */
+        .img2 {
+            /* seperating flex area  */
+            flex: 1;
+        }
+
+        /* css for images in this html file  */
+        img {
+            /* giving proper dimensions  */
+            width: 720px;
+            height: 360px;
+            margin: 12px;
+            /* making the borders rounded  */
+            border-radius: 20px
+        }
+
+        /* css for paragraph element in this html  */
+        p {
+            margin: 10px 18px 10px 18px;
+            /* formating for proper alignment  */
+            padding-top: 16px;
+        }
+
+        /* css for div with all content of nav bar  */
+        .nav {
+            /* fixing nav bar  */
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        /* css for the first div after the nav bar  */
+        #first {
+            margin-top: 1rem;
+        }
+
+        /* css for div with headings i.e Our Website and Refernce Website
+        which seperates them */
+        .heading {
+            /* display flex to keep both block tag i.e h1 in same line  */
+            display: flex;
+            margin-top: 12rem;
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div for eveything inside the navbar -->
+    <div class="nav">
+        <!-- div for logo  -->
+        <div class="image">
+            <!-- making the logo a link to home page  -->
+            <a href="../index.html"><img class="logo" src="../images/logo.png" alt="logo"></a>
+        </div>
+        <!-- company name beside logo and internal css  -->
+        <h1
+            style="margin-right:8rem;padding-top: 3rem;padding-left: 2rem;color: white; font-size: 3rem; width: max-content; height: max-content;font-family: 'Proxima Nova'">
+            BONSAI NEPAL</h1>
+        <!-- div for listed items like home products etc  -->
+        <div class="navitems">
+            <table>
+                <ul>
+                    <!-- list of all links in nav bar  -->
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="references.html" class="active">References</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                </ul>
+            </table>
+        </div>
+    </div>
+    <!-- div with heading which seperates reference webpage and our website  -->
+    <div class="heading">
+        <!-- internal css  -->
+        <h1 style="flex: 1;">OUR WEBPAGE</h1>
+        <h1 style="flex: 1;">REFERENCE WEBPAGE</h1>
+    </div>
+    <!-- strong: to make text bold 
+    details about how we took refernce of nav bar  -->
+    <p id="first"><strong>1. Navigation Bar:</strong>
+        Reference of our Navigation Bar is taken from the website of SOKS Groups. Logo placement is towards the left
+        and the links to navigate the website is towards the right.</p>
+    <!-- div with both reference and our images  -->
+    <div class="maindiv">
+        <!-- link to our webpage  -->
+        <a href="../index.html" target="_blank">
+            <!-- div with image of our webpage  -->
+            <div class="img1">
+                <!-- img of our webpage  -->
+                <img src="../images/Ref4.PNG" alt="Navbar">
+            </div>
+        </a>
+        <!-- link to reference website  -->
+        <a href="https://soksgroup.com/" target="_blank">
+            <!-- div with image of reference website  -->
+            <div class="img2">
+                <!-- img of reference webpage  -->
+                <img src="../images/Ref4.4.PNG" alt="Navbar">
+            </div>
+        </a>
+    </div>
+    <!-- strong: to make text bold 
+    details about how we took refernce of nav bar  -->
+    <p><strong>2. Product hover:</strong>
+        Reference of when hovering over a product in the products page is taken from the website of Daraz. A box
+        shadow is created when we hover over the product which helps us to know which product we are about to open.
+    </p>
+    <!-- div with both reference and our images  -->
+    <div class="maindiv">
+        <!-- link to our webpage  -->
+        <a href="products.html" target="_blank">
+            <!-- div with image of our webpage  -->
+            <div class="img1">
+                <!-- img of our webpage  -->
+                <img src="../images/Ref1.png" alt="productdisplay">
+            </div>
+        </a>
+        <!-- link to reference website  -->
+        <a href="https://www.daraz.com.np/" target="_blank">
+            <!-- div with image of reference website  -->
+            <div class="img2">
+                <!-- img of reference webpage  -->
+                <img src="../images/Ref1.1.PNG" alt="productdisplay">
+            </div>
+        </a>
+    </div>
+    <!-- strong: to make text bold 
+    details about how we took refernce of nav bar  -->
+    <p><strong>3. Landing Page:</strong>
+        Reference of our Landing page when opening products is taken from the website of Eastern leaf. The image of
+        the chosen plant is on the left and all the other details like name, price, info are on the right side of
+        the image. The number of plants can be selected below the info. Pressing the buy now button places your
+        order.</p>
+    <!-- div with both reference and our images  -->
+    <div class="maindiv">
+        <!-- link to our webpage  -->
+        <a href="p6.html" target="_blank">
+            <!-- div with image of our webpage  -->
+            <div class="img1">
+                <!-- img of our webpage  -->
+                <img src="../images/ref3.PNG" alt="landingpage">
+            </div>
+        </a>
+        <!-- link to reference website  -->
+        <a href="https://www.easternleaf.com/Chinese-Elm-Bonsai-Tree-p/800510-03.htm" target="_blank">
+            <!-- div with image of reference website  -->
+            <div class="img2">
+                <!-- img of reference webpage  -->
+                <img src="../images/Ref3.3.PNG" alt="landingpage">
+            </div>
+        </a>
+    </div>
+    <!-- strong: to make text bold 
+    details about how we took refernce of nav bar  -->
+    <p><strong>4. Create Account:</strong>
+        Reference of our Create account page is taken from the website of rushcliffeac. The back ground of the input
+        space is black with slight transparency.</p>
+    <!-- div with both reference and our images  -->
+    <div class="maindiv">
+        <!-- link to our webpage  -->
+        <a href="createacc.html" target="_blank">
+            <!-- div with image of our webpage  -->
+            <div class="img1">
+                <!-- img of our webpage  -->
+                <img src="../images/ref5.PNG" alt="createaccount">
+            </div>
+        </a>
+        <!-- link to reference website  -->
+        <a href="https://www.rushcliffeac.co.uk/club-records.html" target="_blank">
+            <!-- div with image of reference website  -->
+            <div class="img2">
+                <!-- img of reference webpage  -->
+                <img src="../images/ref5.5.PNG" alt="createaccount">
+            </div>
+        </a>
+    </div>
+    <!-- strong: to make text bold 
+    details about how we took refernce of nav bar  -->
+    <p><strong>5. Product Slider:</strong>
+        Reference of our product display in the products page is taken from the website of Sasto Deals. The products are
+        managed in a similar manner in line and the price with discout percentage is mentioned below. </p>
+    <!-- div with both reference and our images  -->
+    <div class="maindiv">
+        <!-- link to our webpage  -->
+        <a href="products.html" target="_blank">
+            <!-- div with image of our webpage  -->
+            <div class="img1">
+                <!-- img of our webpage  -->
+                <img src="../images/ref6.PNG" alt="product">
+            </div>
+        </a>
+        <!-- link to reference website  -->
+        <a href="https://www.sastodeal.com/" target="_blank">
+            <!-- div with image of reference website  -->
+            <div class="img2">
+                <!-- img of reference webpage  -->
+                <img src="../images/ref6.6.PNG" alt="product">
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- keeping logo before the title -->
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <title>BONSAI NEPAL</title>
+    <!-- internal css  -->
+    <style>
+        /* styling body  */
+        body {
+            /* giving font  */
+            font-family: sans-serif;
+            height: 10rem;
+        }
+        #background{
+            /* keeping a bg image and fiting it in the website  */
+            background-image: url(images/bgtest-01.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* css of div with listed items */
+        .navitems {
+            /* aligning according to need */
+            margin-top: 5rem;
+        }
+
+        /* css of logo  */
+        .logo {
+            /* aligning according to need */
+            height: 120px;
+            width: 120px;
+            margin-left: 3rem;
+            margin-top: 1.2rem;
+        }
+
+        /* css of text in home page  */
+        .desc {
+            /* aligning according to need */
+            width: 35vw;
+            text-align: justify;
+            margin: 6rem 0;
+            margin-left: 5rem;
+            /* for text formating  */
+            font-size: 15px;
+            color: black;
+            line-height: 20px;
+        }
+
+        /* css of button below text  */
+        button {
+            /* aligning according to need */
+            margin-top: 10px;
+            width: 5rem;
+            padding: 0;
+            height: 2em;
+            /* for rounded corners  */
+            border-radius: 30px;
+            /* for bg color text color  */
+            background-color: rgba(00, 00, 00, 0.8);
+            border-color: rgba(00, 00, 00, 0.8);
+            color: white;
+        }
+        /* css for darkmode button  */
+        .darkmode{
+            float: right;
+            margin-right: 1rem;
+        }
+    </style>
+    <!-- internal js  -->
+    <script>
+        function darkmode(){
+            // changing background image and text color with the help of id 
+            document.getElementById("background").style.backgroundImage = "url(images/darkbg-01.jpg)";
+            document.getElementById("text").style.color = "white";
+        }
+    </script>
+</head>
+
+<body id="background">
+     <!-- this div is for eveything inside the navbar -->
+    <div class="nav">
+        <!-- div for logo  -->
+        <div class="image">
+            <!-- making the logo a link to home page  -->
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+        </div>
+        <!-- company name beside logo and internal css  -->
+        <h1
+            style="margin-right:8rem;padding-top: 3rem;padding-left: 2rem;color: white; font-size: 3rem; width: max-content; height: max-content;font-family: 'Proxima Nova'">
+            BONSAI NEPAL</h1>
+            
+        <!-- div for listed items like home products etc  -->
+        <div class="navitems">
+            <table>
+                <ul>
+                    <!-- list of links to navigate our webpage  -->
+                    <li><a href="html/login.html">Login</a></li>
+                    <li><a href="html/refernces.html">References</a></li>
+                    <li><a href="html/about.html">About us</a></li>
+                    <li><a href="html/blog.html">Blog</a></li>
+                    <li><a href="html/products.html">Products</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                </ul>
+            </table>
+        </div>
+    </div>
+    <!-- div with dark mode function and button  -->
+    <div class="darkmode">
+        <!-- button to change background to dark  -->
+        <button onclick="darkmode();">Dark Mode</button>
+    </div>
+    <!-- div which contains description about company and bonsai plants  -->
+    <div class="desc" id="text">
+        We, Bonsai Nepal, situated at Kathmandu, Nepal, is a young venture with the moto of bringing
+        Bonsai plants to every house in the city. We have been successful in providing the quality service since 2022.
+        With the blessings of the Mother Earth we have created bonsai trees that are today part of many homes.The plants
+        designed here of international bonsai standard but with local touch.The Founder Praneet Tuladhar says “every
+        breath we
+        breathe is because of the trees and dedicating the entire life to these trees is a blessing. Just like how our
+        parents give us life, the Tree gives us life giving oxygen to breathe, so taking care of them is an individual’s
+        duty.”<br><br>
+        Bonsai ("planting in a pot" meaning in Japanese) are trees in a bonsai pot designed using certain techniques.
+        Bonsai consists of the two word parts Bon=pot and Sai=plant. Bonsai Nepal one stop go for
+        all types of bonsai tree species. All bonsai are individually photographed and after a purchase in our online
+        shop, you get exactly the tree you have ordered. Safely packed, the tree will be delivered quickly as possible.
+        </p>
+        <!-- link to product page  -->
+        <a href="html/products.html"><button>Buy Now</button></a>
+    </div>
+    
+    <footer>
+        <!-- div which contains all of the content in footer  -->
+        <div class="footercontactus">
+            <!-- div with contact informations  -->
+            <div class="fcon1">
+                <h3>Contact</h3>
+                <p><br>Kathmandu, Nepal<br>01-4412345<br>Bonsai.Nepal@gmail.com</p>
+            </div>
+            <!-- div with payment partners listed  -->
+            <div class="fcon2">
+                <h3>Our Payment Partner</h3>
+                <img src="images/esewa.png" alt="esewa">
+                <img src="images/khalti.png" alt="khalti"><br>
+                <img src="images/visa.PNG" alt="visa">
+                <img src="images/Mastercard.png" alt="mastercard">
+            </div>
+        </div>
+        <!-- div with author and email  -->
+        <div class="fconlast">
+            <p>Author: Team 7 C13<br>
+                <a href="mailto:Bonsai.Nepal@gmail.com">Bonsai.Nepal@gmail.com</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

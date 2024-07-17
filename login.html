@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- keeping logo before the title -->
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <title>BONSAI NEPAL</title>
+    <!-- internal css  -->
+    <style>
+        body {
+            /* keeping a bg image and fiting it in the website  */
+            background-image: url(../images/bg5-01.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* giving font  */
+            font-family: sans-serif;
+        }
+
+        /* css for form element  */
+        form {
+            display: block;
+            /* aligning according to need  */
+            margin: 0px auto;
+            max-width: 500px;
+            min-width: 300px;
+            width: 60vw;
+        }
+
+        /* css for heading 2 i.e Create account  */
+        h2 {
+            /* formatting text  */
+            text-align: center;
+            margin: 25px 0 0 0;
+        }
+
+        /* display text to show user what to write  */
+        label {
+            display: block;
+            margin: 0.5rem 0;
+        }
+
+        /* css for input & text area where user can input their details  */
+        input {
+            /* decorating input and aligning
+            and formatting according to need */
+            margin: 10px 0 0 0;
+            width: 100%;
+            padding: 0;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-color: rgba(0, 0, 0, 0.3);
+            height: 2em;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        /*css of section where the whole form is  */
+        fieldset {
+            border: 0;
+        }
+
+        /* css for buttonn to submit the form  */
+        button {
+            /* formating button  */
+            margin: 10px 40%;
+            width: 30%;
+            padding: 0;
+            padding-top: 2px;
+            height: 2em;
+            /* curving edges  */
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-color: rgba(0, 0, 0, 0.8);
+            color: black;
+        }
+
+        /* css for line between heading and filedset  */
+        hr {
+            width: 32rem;
+            margin: 1rem auto 0.2rem auto;
+        }
+
+        /* div with link to create account page  */
+        .createacc {
+            /* shifts the div to left side of main div  */
+            float: left;
+            text-decoration: none;
+            color: #e51d19;
+        }
+
+        /* css for while hovering over login div  */
+        .createacc:hover {
+            color: #333333;
+        }
+    </style>
+    <!-- external javascript  -->
+    <script src="../js/javascript.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="image">
+            <!-- making the logo a link to home page  -->
+            <a href="../index.html"><img class="logo" src="../images/logo.png" alt="logo"></a>
+        </div>
+        <h1
+            style="margin-right:8rem;padding-top: 3rem;padding-left: 2rem;color: white; font-size: 3rem; width: max-content; height: max-content;font-family: 'Proxima Nova'">
+            BONSAI NEPAL</h1>
+        <!-- div for listed items like home products etc  -->
+        <div class="navitems">
+            <table>
+                <ul>
+                    <li><a href="login.html" class="active">Login</a></li>
+                    <li><a href="refernces.html">References</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                </ul>
+            </table>
+        </div>
+    </div>
+    <!-- div with everything in form  -->
+    <div class="from">
+        <!-- heading  -->
+        <h2 id="title">LOGIN</h2>
+        <!-- line  -->
+        <hr>
+        <!-- starting of form  -->
+        <form id="login-form">
+            <fieldset>
+                <label id="email-label">
+                    <!-- Display what to input  -->
+                    Email:
+                    <!-- section to input  -->
+                    <input id="email" type="email" placeholder="  Email">
+                </label>
+                <label id="pass-label">
+                    <!-- Display what to input  -->
+                    Password:
+                    <!-- section to input  -->
+                    <input id="pass" type="password" placeholder="  Password">
+                </label>
+                <!-- redirect page to create account page  -->
+                <a href="createacc.html" class="createacc">
+                    <p>Create account</p>
+                </a>
+                <!-- button to submit form  -->
+                <button type="submit" id="submit" onclick="formvali();">Submit</button>
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+
+</html>
